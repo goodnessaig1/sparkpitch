@@ -1,36 +1,32 @@
 import React from "react";
-import { FaWhatsapp } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
-import { BsTwitterX } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
+import { RiLinkedinFill } from "react-icons/ri";
 
 const Footer = () => {
-  const backToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
   return (
-    <div className="w-full justify-cente flex flex-col h-[300px] flex bg-[#231a5f]">
-      <div className="flex w-full items-center justify-center h-8 py-7 border-y border-gray-500">
-        <span
-          onClick={backToTop}
-          className="text-gray-400 hover:cursor-pointer hover:text-gray-500 transition duration-300"
+    <div className="h-[200px] lg:h-[300px] pt-20 lg:pt-24">
+      <div className="flex flex-row gap-6 justify-center items-center">
+        <a
+          href="https://www.facebook.com/sparkpitch"
+          className="hover:text-[#3452ff] text-[#231a5f] h-[50px] w-[50px] rounded-full hover:border-[#3452ff] transition duration-300 border-[1px] border-gray-400 flex items-center justify-center"
         >
-          Back to top
-        </span>
+          <FaFacebookF size={20} />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/sparkpitch"
+          className="hover:text-[#3452ff] text-[#231a5f] h-[50px] w-[50px] rounded-full hover:border-[#3452ff] transition duration-300 border-[1px] border-gray-400 flex items-center justify-center"
+        >
+          <RiLinkedinFill size={20} />
+        </a>
+        <a
+          href="https://instagram.com/sparkpitch?utm_medium=copy_link"
+          className="hover:text-[#3452ff] text-[#231a5f] h-[50px] w-[50px] rounded-full hover:border-[#3452ff] transition duration-300 border-[1px] border-gray-400 flex items-center justify-center"
+        >
+          <FaInstagram size={20} />
+        </a>
       </div>
-      <div className="flex flex-col px-4 lg:px-20 pt-10 gap-1">
-        <i className="text-2xl text-white text-purple-200">SparkPitch</i>
-        <span className="text-xs text-gray-300">support@sparkpitch</span>
-        <span className="text-xs text-gray-300">+442 210 304 304</span>
-        <div className="flex flex-row gap-2 text-gray-400">
-          <FaWhatsapp />
-          <FaInstagram />
-          <BsTwitterX />
-        </div>
-      </div>
-      <div className="w-full text-center mt-20 text-gray-500 text-xs">
+      <div className="w-full text-center mt-8 lg:mt-12 text-gray-500 text-xs">
         © 2024 SparkPitch.
       </div>
     </div>

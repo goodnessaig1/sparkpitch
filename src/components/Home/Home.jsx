@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <div className="w-full flex flex-col pt-10 pb-16 h-full items-center">
+      <div className="w-full pt-14 lg:pt-[106px] flex flex-col pt-10 pb-16 h-full items-center">
         <div className="max-w-[800px] h-full w-full  border-[#E4E7E9] p-6 rounded-lg flex flex-col gap-5 ">
           <div className="text-center text-2xl font-semibold text-purple-900">
             Blog Posts

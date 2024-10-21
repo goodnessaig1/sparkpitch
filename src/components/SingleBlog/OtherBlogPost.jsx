@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const OtherBlogPost = ({ tag }) => {
   return (
-    <div className="p-4 lg:p-20 flex flex-col gap-10">
+    <div className="p-4 lg:p-20 w-full items-center flex flex-col gap-10">
       <h2 className="text-2xl font-semibold">Latest</h2>
       <div className="flex flex-col gap-9 lg:gap-6 max-w-[800px]">
         {blogData &&

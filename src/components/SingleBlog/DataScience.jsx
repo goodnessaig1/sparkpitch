@@ -14,7 +14,7 @@ const DataScience = () => {
   return (
     <div className="flex flex-col w-full">
       <Header />
-      <div className="w-full flex-col flex items-center">
+      <div className="w-full pt-4 lg:pt-[106px] flex-col flex items-center">
         <div className="items-center flex flex-col gap-6 lg:border border-[#E4E7E9] p-4 mt-10 lg:rounded-lg max-w-[700px]">
           <div className="flex flex-col gap-2">
             <h3 className="text-xl lg:text-4xl font-semibold">
